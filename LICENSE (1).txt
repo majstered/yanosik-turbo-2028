@@ -1,8 +1,0 @@
-Copyright (c) 2025 Piotr Przebiorowski
-
-Projekt „Yanosik Turbo” jest objęty ochroną autorską.  
-Zabrania się kopiowania, modyfikowania, rozpowszechniania lub używania tego projektu w całości lub w części bez pisemnej zgody autora.
-
-Kod źródłowy oraz wersja wykonywalna nie są publicznie udostępniane.
-
-Licencja: Wszystkie prawa zastrzeżone.
