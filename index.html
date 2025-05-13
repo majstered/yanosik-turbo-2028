@@ -1,125 +1,130 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Yanosik Turbo 2028 – Projekt chroniony</title>
-    <style>
-        body {
-            background-color: #fef4d1;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 40px;
-            color: #333;
-        }
-        h1, h2 {
-            color: #222;
-        }
-        .screenshot {
-            border: 2px solid #aaa;
-            margin: 15px 0;
-            max-width: 100%;
-            height: auto;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .footer {
-            font-size: 14px;
-            color: gray;
-            margin-top: 30px;
-            text-align: center;
-        }
-        pre {
-            background: #fff9e6;
-            padding: 15px;
-            border: 1px solid #ddd;
-            overflow-x: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yanosik Turbo 2028</title>
+  <style>
+    body {
+      background-color: #fef4d1;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      color: #3a2f1d;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      margin-top: 30px;
+      color: #5a4a2a;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "\272A ";
+      color: #7c5d3b;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      background-color: #3a2f1d;
+      color: #fff8e1;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #7a6d57;
+    }
+    .footer a {
+      color: #3a2f1d;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    pre {
+      background: #fff9e6;
+      padding: 15px;
+      border: 1px solid #ddd;
+      overflow-x: auto;
+    }
+  </style>
 </head>
 <body>
-    <h1>🚦 Yanosik Turbo 2028 – Projekt chroniony</h1>
+  <h1>🚦 Yanosik Turbo 2028 – Projekt chroniony</h1>
 
-    <div class="section">
-        <p>Aplikacja desktopowa do pobierania i odtwarzania muzyki z pięknym, stylizowanym interfejsem.<br>
-        Zaprojektowana w klasycznym stylu z nutką retro – połączenie prostoty z funkcjonalnością.<br>
-        Repozytorium dokumentacyjne – <strong>kod źródłowy i wersja EXE nie są dostępne publicznie.</strong></p>
-    </div>
+  <p>Aplikacja desktopowa do pobierania i odtwarzania muzyki z pięknym, stylizowanym interfejsem.<br>
+  Zaprojektowana w klasycznym stylu z nutką retro – połączenie prostoty z funkcjonalnością.<br>
+  Repozytorium dokumentacyjne – <strong>kod źródłowy i wersja EXE nie są dostępne publicznie.</strong></p>
 
-    <div class="section">
-        <h2>🎵 Główne funkcje</h2>
-        <ul>
-            <li>Pobieranie MP3 z legalnych źródeł</li>
-            <li>Przeglądarka i odtwarzacz biblioteki utworów</li>
-            <li>Dodawanie do ulubionych</li>
-            <li>Stylizowany pasek postępu z funkcją przewijania</li>
-            <li>Tryb zapętlenia, głośność, przyciski sterujące</li>
-            <li>Okno z informacją prawną</li>
-        </ul>
-    </div>
+  <hr>
+  <h2>🎵 Opis działania programu Yanosik_turbo_2028</h2>
+  <p>Aplikacja <strong>Yanosik_turbo_2028</strong> umożliwia pobieranie muzyki z legalnych źródeł i zarządzanie własną biblioteką utworów. Program pozwala na tworzenie ulubionych playlist, odtwarzanie muzyki z paskiem postępu oraz zapętlanie pojedynczych utworów lub całych list.</p>
 
-    <div class="section">
-        <h2>📖 Jak działa program</h2>
-        <p>Aby skorzystać z aplikacji, wykonaj poniższe kroki:</p>
-        <ol>
-            <li>Wklej link do legalnego źródła muzyki (np. YouTube) w pole tekstowe.</li>
-            <li>Kliknij <strong>„⬇️ Pobierz MP3”</strong>, aby dodać plik do głównej playlisty.</li>
-            <li>Zaznacz utwór z listy i kliknij <strong>„▶ Odtwórz”</strong>, aby rozpocząć odtwarzanie.</li>
-            <li>Aby dodać utwór do ulubionych, zaznacz go i kliknij <strong>„➕ Dodaj do ulubionych”</strong>.</li>
-            <li>Przełącz się do listy ulubionych klikając <strong>„🎧 Idź do mojej listy”</strong>.</li>
-            <li>Przycisk <strong>„🗑️ Delete”</strong> w trybie ulubionych usuwa tylko z tej listy. W trybie głównym – usuwa plik z dysku.</li>
-            <li>Przycisk <strong>„Pętla”</strong> pozwala zapętlić całą playlistę. Aby zapętlić jeden utwór – dodaj tylko jego do ulubionych.</li>
-            <li>Możesz kliknąć na pasek postępu, aby przewinąć piosenkę do dowolnego momentu.</li>
-        </ol>
-    </div>
+  <h3>🔹 Jak korzystać z programu:</h3>
+  <ul>
+    <li>Wklej link do legalnego źródła muzyki (np. YouTube) w polu tekstowym u góry.</li>
+    <li>Kliknij przycisk <strong>„⬇️ Pobierz MP3”</strong>, aby automatycznie dodać utwór do głównej playlisty.</li>
+  </ul>
 
-    <div class="section">
-        <h2>🖼️ Ikona aplikacji</h2>
-        <p>Ikona <strong>Yanosik Turbo</strong> to stylizowany płomień – symbol energii, dynamiki i klasycznego charakteru aplikacji.</p>
-    </div>
+  <h4>▶️ Aby odtworzyć utwór:</h4>
+  <ul>
+    <li>Zaznacz wybraną piosenkę z listy.</li>
+    <li>Kliknij <strong>„▶ Odtwórz”</strong>.</li>
+  </ul>
 
-    <div class="section">
-        <h2>📸 Zrzuty ekranu</h2>
-        <p>(Tutaj możesz wstawić obrazy)</p>
-        <img src="screenshot1.png" alt="Zrzut ekranu 1" class="screenshot">
-        <img src="screenshot2.png" alt="Zrzut ekranu 2" class="screenshot">
-    </div>
+  <h4>⭐ Aby dodać do ulubionych:</h4>
+  <ul>
+    <li>Zaznacz utwór i kliknij <strong>„➕ Dodaj do ulubionych”</strong>.</li>
+    <li>Przełącz się do specjalnej listy ulubionych klikając <strong>„🎧 Idź do mojej listy”</strong>.</li>
+  </ul>
 
-    <div class="section">
-        <h2>🔐 Informacja prawna</h2>
-        <p>Ten projekt ma charakter dokumentacyjny. Kod źródłowy <code>.py</code> oraz wersja <code>.exe</code> nie są publicznie udostępniane.</p>
-        <p>Wszelkie prawa zastrzeżone. Kopiowanie, modyfikowanie lub redystrybucja bez zgody autora są zabronione.</p>
-    </div>
+  <h4>🗑️ Usuwanie plików:</h4>
+  <ul>
+    <li>W trybie <strong>mojej playlisty</strong> – przycisk <strong>„🗑️ Delete”</strong> usuwa piosenkę tylko z ulubionych.</li>
+    <li>W trybie <strong>listy głównej</strong> – usuwa plik również z dysku po potwierdzeniu.</li>
+  </ul>
 
-    <div class="section">
-        <h2>📦 Struktura plików (rekomendowana)</h2>
-        <pre>
-yanosik_turbo_2028/
+  <h4>🔁 Odtwarzanie w pętli:</h4>
+  <ul>
+    <li>Przycisk <strong>„Pętla”</strong> zapętla całą aktywną playlistę.</li>
+    <li>Aby zapętlić tylko jeden utwór, dodaj go do ulubionych i pozostaw tam jako jedyny.</li>
+  </ul>
+
+  <h4>📊 Pasek postępu:</h4>
+  <ul>
+    <li>Wyświetla czas trwania utworu w trakcie odtwarzania.</li>
+    <li>Kliknij w pasek, aby przewinąć do dowolnego miejsca w piosence.</li>
+  </ul>
+
+  <hr>
+  <h2>📦 Struktura plików (rekomendowana)</h2>
+  <pre><code>yanosik_turbo_2028/
 ├── Yanosik_turbo_FRAME_4NUTKI_OK_PLAYCOLOR_FINAL.py
 ├── README.md
 ├── LICENSE
 ├── output/
-│   └── [tu zapisują się pobrane pliki .mp3]
+│   └── [tutaj zapisywane są pobrane pliki MP3]
 ├── icons/
 │   └── yanosik_logo.png
 └── screenshots/
     ├── screenshot1.png
-    └── screenshot2.png
-        </pre>
-    </div>
+    └── screenshot2.png</code></pre>
 
-    <div class="section">
-        <h2>⬇️ Pobierz aplikację (EXE)</h2>
-        <p>Link do pobrania aplikacji zostanie udostępniony po kontakcie z autorem.</p>
-    </div>
+  <a class="button" href="https://drive.google.com/uc?export=download&id=TUTAJ_WSTAW_ID_PLIKU" target="_blank">⬇️ Pobierz aplikację (EXE)</a>
 
-    <div class="section" style="text-align:center;">
-        🔗 <a href="https://github.com/" target="_blank">Zobacz moje inne aplikacje</a> &nbsp;|&nbsp; <a href="https://github.com/" target="_blank">Repozytorium GitHub</a>
-    </div>
-
-    <div class="footer">
-        © 2025 Ramzi & Mgiełka – Wszystkie prawa zastrzeżone.
-    </div>
+  <div class="footer">
+    <span><a href="https://majstered.github.io/ramzi.github.io/" target="_blank">Zobacz moje inne aplikacje</a></span>
+    &nbsp;|&nbsp;
+    <span><a href="https://github.com/majstered/yanosik-turbo-2028" target="_blank">Repozytorium GitHub</a></span><br><br>
+    © 2025 Ramzi & Mgiełka – Wszystkie prawa zastrzeżone.
+  </div>
 </body>
 </html>
