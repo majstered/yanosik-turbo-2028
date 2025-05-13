@@ -1,4 +1,4 @@
-# 🚦 Yanosik Turbo 2028 – Projekt chroniony
+# 🚦 Yanosik Turbo 1.0 – Projekt chroniony
 
 Aplikacja desktopowa do pobierania i odtwarzania muzyki z pięknym, stylizowanym interfejsem.  
 Zaprojektowana w klasycznym stylu z nutką retro – połączenie prostoty z funkcjonalnością.  
@@ -9,7 +9,7 @@ Repozytorium dokumentacyjne – **kod źródłowy i wersja EXE nie są dostępne
 ## 🎵 Główne funkcje
 
 ### 🔽 Pobieranie MP3 z legalnych źródeł
-- Wklej dowolny link audio (np. z YouTube, Bandcamp, SoundCloud)
+- Wklej dowolny link audio
 - Program automatycznie pobiera i konwertuje plik do MP3
 - Ostrzeżenie przed wklejaniem całych playlist – tylko pojedyncze utwory!
 
