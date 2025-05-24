@@ -1,4 +1,4 @@
-# 🚦 Yanosik Turbo 1.0 – Projekt chroniony
+# 🚦 mp3_turbo_1.0 – Projekt chroniony
 
 Aplikacja desktopowa do pobierania i odtwarzania muzyki z pięknym, stylizowanym interfejsem.  
 Zaprojektowana w klasycznym stylu z nutką retro – połączenie prostoty z funkcjonalnością.  
