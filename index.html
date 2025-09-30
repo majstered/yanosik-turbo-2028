@@ -1,151 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yanosik Turbo 1.0</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ramzi • Hub</title>
+  <meta name="description" content="Hub naszych projektów: Siedliszcze, Strażopis, Odpady, Yanopis.">
   <style>
-    body {
-      background-color: #fef4d1;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 40px;
-      color: #3a2f1d;
+    :root{
+      --bg:#fbfaf7; --card:#fff; --ink:#1f2430; --muted:#6b7280;
+      --accent:#1f5fbf; --accent-ink:#fff; --border:#e8e8ef;
+      --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.08);
+      --maxw:1100px;
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+    .dark{
+      --bg:#10131a; --card:#141824; --ink:#e9eef7; --muted:#aab3c6;
+      --accent:#7aa8ff; --accent-ink:#001a44; --border:#263049;
     }
-    h2 {
-      font-size: 22px;
-      margin-top: 30px;
-      color: #5a4a2a;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li::before {
-      content: "\272A ";
-      color: #7c5d3b;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 10px 20px;
-      background-color: #3a2f1d;
-      color: #fff8e1;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    .footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #7a6d57;
-    }
-    .footer a {
-      color: #3a2f1d;
-      text-decoration: none;
-      margin-right: 15px;
-    }
-    pre {
-      background: #fff9e6;
-      padding: 15px;
-      border: 1px solid #ddd;
-      overflow-x: auto;
-    }
+
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--ink)}
+    a{color:inherit;text-decoration:none}
+
+    /* ——— siatka ——— */
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);padding:16px;display:flex;flex-direction:column}
+    .card h3{margin:0 0 8px}
+    .card p{margin:0 0 12px;color:var(--muted);font-size:14px}
+    .go{margin-top:auto;display:inline-block;padding:10px 14px;border-radius:12px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-align:center}
+
+    /* ——— przycisk trybu ——— */
+    #modeBtn{position:fixed;right:20px;bottom:20px;padding:10px 16px;border:1px solid var(--border);border-radius:999px;background:var(--accent);color:var(--accent-ink);cursor:pointer;font-weight:600;box-shadow:var(--shadow)}
+
+    /* ——— stopka ——— */
+    footer{margin-top:30px;border-top:1px solid var(--border)}
+    footer .wrap{color:var(--muted);font-size:14px;padding:18px 0}
   </style>
 </head>
 <body>
-  <h1>🚦 mp3_turbo_1.0</h1>
 
-<h2>💻 Aplikacja do pobierania i odtwarzania muzyki</h2>
-<p>
-  Zaprojektowana w klasycznym stylu – połączenie prostoty z funkcjonalnością.<br>
-  💡 Aplikacja posiada <strong>czterokolorowy interfejs</strong>,<br>
-  który użytkownik może zmieniać klikając kolorowe nutki 🎵 – dopasuj tło do swojego nastroju!<br>
-</p>
-<h2>✅ Uruchomienie programu</h2>
-<ol>
-  <li><strong>Pobierz aplikację</strong> i wypakuj całą zawartość do wybranego folderu na komputerze.</li>
-  <li>Sprawdź zawartość folderu. W folderze muszą znajdować się:
-    <ul>
-      <li>plik <code>mp3_turbo_1.0.exe</code></li>
-      <li>plik <code>ffmpeg</code></li>
-    </ul>
-  </li>
-  <li>Przypnij aplikację do paska zadań, aby mieć szybki dostęp do programu.</li>
-  <li>Folder z pobieraną muzyką zostanie utworzony automatycznie w chwili uruchomienia programu.
-</ol>
-  <h2>✅ Funkcje programu</h2>
-  <ul>
-  <h4>▶️ Główna playlista:</h4>
-  <ul>
-    <li> Po uruchomieniu programu wyświetli się główna playlista,<br>
-    na którą będą pobierane utwory.
-    <li> Zaznacz wybraną piosenkę z listy.</li>
-    <li> Kliknij <strong>„▶ Odtwórz”</strong>.</li>
-    <li> Po zaznaczeniu wybranej piosenki, program automatycznie odtworzy ją<br>
-    oraz wszystkie kolejne utwory znajdujące się poniżej na playliście.
-<li>
-  Możesz załadować pliki MP3 z dysku do aplikacji:<br>
-  – Kliknij w aplikacji „Folder MP3” – to Twój folder połączony z aplikacją.<br>
-  – Przeciągnij do tego folderu pliki MP3 ze swoją muzyką z komputera.<br>
-  – Po odświeżeniu „Głównej listy MP3” piosenki pojawią się w głównej liście aplikacji.
-</li>
+  <main class="wrap">
+    <section class="grid">
+      <article class="card">
+        <h3>🏠 Siedliszcze</h3>
+        <p>Strona główna o naszej miejscowości.</p>
+        <a class="go" href="https://majstered.github.io/siedliszcze.github.io/">Przejdź</a>
+      </article>
+      <article class="card">
+        <h3>✍️ Strażopis</h3>
+        <p>Publicystyka, opowieści i felietony.</p>
+        <a class="go" href="https://majstered.github.io/strazopis.github.io/">Przejdź</a>
+      </article>
+      <article class="card">
+        <h3>♻️ Odpady</h3>
+        <p>Ekologia, segregacja i porady zero-waste.</p>
+        <a class="go" href="https://majstered.github.io/odpady.github.io/">Przejdź</a>
+      </article>
+      <article class="card">
+        <h3>📜 Yanopis</h3>
+        <p>Duchowe rozważania i modlitwy.</p>
+        <a class="go" href="https://majstered.github.io/yanopis.github.io/">Przejdź</a>
+      </article>
+    </section>
+  </main>
 
-  </ul>
+  <footer>
+    <div class="wrap">© 2025 Ramzi • GitHub Pages</div>
+  </footer>
 
-  <h4>⭐ Aby dodać do ulubionych:</h4>
-  <ul>
-    <li>Zaznacz utwór i kliknij <strong>„➕ Dodaj do ulubionych”</strong>.</li>
-    <li>Wybierz numer playlisty od 1 do 4<strong><br>
-    „🎧 Moje ulubione playlisty są ukryte w interfejsie<br>
-    – możesz je wyświetlić, klikając jedną z czterech ikonek nutek.</strong>.</li>
-  </ul>
+  <button id="modeBtn">🌙 Noc</button>
 
-  <h4>🗑️ Usuwanie plików:</h4>
-  <ul>
-    <li>W trybie <strong>mojej playlisty</strong> – przycisk <strong>„🗑️ Delete”</strong> usuwa piosenkę tylko z ulubionych.</li>
-    <li>W trybie <strong>listy głównej</strong> – usuwa plik również z dysku po potwierdzeniu.</li>
-  </ul>
-
-  <h4>🔁 Odtwarzanie w pętli:</h4>
-  <ul>
-    <li>Przycisk <strong>„Pętla”</strong> zapętla tylko wybrany utwór.</li>
-    <li>Bardzo ciekawą funkcją opcji „pętli”<br>
-    - Jeśli podczas odtwarzania piosenki klikniesz ikonę pętli<br>
-    i zaznaczysz inną piosenkę, zostanie ona odtworzona jako kolejna po bieżącej.</li>
-  </ul>
-
-  <h4>📊 Pasek postępu:</h4>
-  <ul>
-    <li>Wyświetla czas trwania utworu w trakcie odtwarzania.</li>
-    <li>Kliknij w pasek, aby przewinąć do dowolnego miejsca w piosence.</li>
-  </ul>
-<h2>📸 Zrzuty ekranu aplikacji</h2>
-
-<img src="screenshot1.png" alt="Zrzut ekranu 3" style="max-width:100%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-<img src="screenshot4.png" alt="Zrzut ekranu 4" style="max-width:100%; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-
-
-
-<!-- 🔐 Dodany blok z informacją prawną -->
-<div style="margin-top: 40px; margin-bottom: 20px; background-color: #fff9dc; padding: 20px; border-radius: 12px; border: 1px solid #d8c894;">
-  <h2 style="margin-top: 0;">🛡️ Zgodność z polskim prawem – dozwolony użytek osobisty</h2>
-  <p>Zgodnie z art. 23 ustawy o prawie autorskim i prawach pokrewnych (Dz.U. 1994 nr 24 poz. 83),<br> wolno nieodpłatnie korzystać z już rozpowszechnionego utworu bez zezwolenia twórcy<br> w zakresie własnego użytku osobistego.</p>
-  <p>Oznacza to, że użytkownik ma prawo do pobierania i przechowywania utworów<br> (np. muzyki, filmów, nagrań) na swoim urządzeniu wyłącznie na własne potrzeby – pod warunkiem,<br> że nie udostępnia ich publicznie ani nie rozpowszechnia dalej.</p>
-  <p style="color: #b20000; font-weight: bold;">❗ Należy jednak pamiętać, że niektóre serwisy (np. YouTube, SoundCloud)<br> mogą w swoich regulaminach zabraniać pobierania treści<br> – nawet w przypadku, gdy takie pobieranie jest dopuszczalne przez polskie prawo.</p>
-</div>
-  <a class="button" href="https://drive.google.com/uc?export=download&id=1T0UCIwxEslcYZ40HKmPXe3DPb9wYWIwh" target="_blank">⬇️ Pobierz aplikację (EXE)</a>
-
-  <div class="footer">
-    <span><a href="https://majstered.github.io/ramzi.github.io/" target="_blank">Zobacz moje inne aplikacje</a></span>
-    &nbsp;|&nbsp;
-    <span><a href="https://github.com/majstered/yanosik-turbo-2028" target="_blank">Repozytorium GitHub</a></span><br><br>
-    © 2025 Ramzi & Mgiełka – Wszystkie prawa zastrzeżone.
-  </div>
+  <script>
+    // tryb dzień/noc
+    const btn=document.getElementById('modeBtn');
+    const KEY='ramzi_mode';
+    function setMode(m){ 
+      if(m==='dark'){ document.documentElement.classList.add('dark'); btn.textContent='☀️ Dzień'; }
+      else { document.documentElement.classList.remove('dark'); btn.textContent='🌙 Noc'; }
+      localStorage.setItem(KEY,m);
+    }
+    const saved=localStorage.getItem(KEY); if(saved) setMode(saved);
+    btn.addEventListener('click',()=>setMode(document.documentElement.classList.contains('dark')?'light':'dark'));
+  </script>
 </body>
 </html>
-<br>
